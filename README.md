@@ -13,7 +13,7 @@ This project enables end-to-end simulation and testing of BTC staking and stBTC 
 ### 1. Clone the Repository
 
 ```zsh
-git clone <repository-url>
+git clone https://github.com/SolomonYakubu/babylon-relayer
 cd babylon-relayer-project
 ```
 
