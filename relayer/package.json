@@ -1,0 +1,38 @@
+{
+  "name": "babylon-relayer",
+  "version": "1.0.0",
+  "description": "Bitcoin to EVM relayer for Babylon protocol",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "test": "echo 'Run tests from project root with: npm test'",
+    "tx": "node babylon-tx-creator.js",
+    "tx:cli": "node babylon-tx-creator.js cli",
+    "tx:web": "node babylon-tx-creator.js web",
+    "tx:demo": "node babylon-tx-creator.js demo",
+    "simulation": "node main.js --simulation-only",
+    "monitor": "node main.js --verbose"
+  },
+  "keywords": [
+    "bitcoin",
+    "ethereum",
+    "relayer",
+    "babylon",
+    "staking"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bitcoinjs-lib": "^6.1.7",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "express": "^5.1.0",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

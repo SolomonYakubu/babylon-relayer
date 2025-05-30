@@ -1,0 +1,41 @@
+{
+  "name": "babylon-relayer-project",
+  "version": "1.0.0",
+  "description": "Bitcoin to EVM relayer for Babylon protocol staking",
+  "main": "relayer/main.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node",
+    "start": "cd relayer && npm start",
+    "setup": "npm install && cd relayer && npm install"
+  },
+  "keywords": [
+    "babylon",
+    "bitcoin",
+    "ethereum",
+    "staking",
+    "relayer",
+    "defi",
+    "cross-chain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.24.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "bip32": "^5.0.0-rc.0",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^6.1.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

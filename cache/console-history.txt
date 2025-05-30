@@ -1,0 +1,29 @@
+await vault.getDeposit("your_babylon_txid_here")
+// Optionally, check if your BTC tx hash is registered
+(await stBTC.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")).toString()
+// Check stBTC balance for the relayer address
+(await vault.totalSupply()).toString()
+// Check total supply in Vault
+const stBTC = await ethers.getContractAt(vaultAbi, "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const vault = await ethers.getContractAt(vaultAbi, "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512");
+const vaultAbi = require('./relayer/vaultABI.json');
+npx hardhat run scripts/deploy.js --network localhost
+await Vault.address
+const StBTC = await ethers.getContractAt("StBTC", deployment.stBTC);
+const Vault = await ethers.getContractAt("Vault", deployment.vault);
+const deployment = require('./deployments/localhost.json');
+const Vault = await ethers.getContractAt("Vault", deployment.Vault.address);const StBTC = await ethers.getContractAt("StBTC", deployment.StBTC.address);
+const deployment = require('./deployments/localhost.json');
+Uncaught ReferenceError: deployment is not defined
+> const StBTC = await ethers.getContractAt("StBTC", deployment.StBTC.address);
+    at REPL3:1:77
+Uncaught ReferenceError: deployment is not defined
+> const Vault = await ethers.getContractAt("Vault", deployment.Vault.address);
+const StBTC = await ethers.getContractAt("StBTC", deployment.StBTC.address);
+const Vault = await ethers.getContractAt("Vault", deployment.Vault.address);
+const deployment = require('./deployments/localhost.json');
+const StBTC = await ethers.getContractAt("StBTC", deployment.StBTC.address);
+const Vault = await ethers.getContractAt("Vault", deployment.Vault.address);
+const deployment = require('./deployments/localhost.json');
+const StBTC = await ethers.getContractAt("StBTC", "<StBTCAddress>");
+const Vault = await ethers.getContractAt("Vault", "<VaultAddress>");
